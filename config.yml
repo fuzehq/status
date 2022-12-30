@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: Fuze Status
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -97,7 +97,7 @@ defaultContentLanguage: en
 #
 # Broken example:
 # baseUrl: /
-baseURL: https://example.com
+baseURL: https://fuze.finance
 
 # For features like Last modified, you
 # need to use a Git repository. If you
@@ -143,10 +143,12 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
-      closed: true
-    - name: Empty Category
+    - name: Production - UAE
+      description: Production environment
+      closed: false
+    - name: Sandbox - UAE
+      description: Sandbox environment for testing
+      closed: false
     - name: Uncategorized
       untitled: true
 
@@ -158,19 +160,17 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: North Coast
+    - name: API Gateway
+      category: Sandbox - UAE
+      description: Main API for the sandbox
+      link: https://dev.fuze.finance/v1/api/checks
+    - name: Docs
+      description: This is the service which is used by developers to check documentation
+      category: Uncategorized
+      link: https://docs.fuze.finance
     - name: Website
-      description: The web frontend for the application.
-      category: Uncategorized
-      link: https://example.com/
-    - name: API
-      description: The guts of the application.
-      category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
+      description: Our landing page
+      link: https://fuze.finance
       category: Uncategorized
 
   # What date format to use?
@@ -333,7 +333,7 @@ params:
   # disrupted: "#cc4400"
   # down: "#e60000"
   # notice: "#24478f"
-  brand: "#0a0c0f"
+  brand: "#FAF9F6"
   ok: "#008000"
   disrupted: "#cc4400"
   down: "#e60000"
