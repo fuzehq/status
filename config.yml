@@ -161,9 +161,13 @@ params:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
     - name: API Gateway
+      category: Production - UAE
+      description: Main API for production
+      link: https://api.fuze.finance/v1/api/checks
+    - name: API Gateway
       category: Sandbox - UAE
       description: Main API for the sandbox
-      link: https://dev.fuze.finance/v1/api/checks
+      link: https://dev.api.fuze.finance/v1/api/checks
     - name: Docs
       description: This is the service which is used by developers to check documentation
       category: Uncategorized
