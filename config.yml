@@ -146,6 +146,9 @@ params:
     - name: Production - UAE
       description: Production environment
       closed: false
+    - name: Staging - UAE
+      description: Staging environment
+      closed: false
     - name: Sandbox - UAE
       description: Sandbox environment for testing
       closed: false
@@ -160,6 +163,18 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
+    - name: API Gateway
+      category: Production - UAE
+      description: Main API for production
+      link: https://prod.api.fuze.finance/checks
+    - name: DAMS
+      category: Staging - UAE
+      description: Digital Assets Management Dashboard in Staging
+      link: https://staging.dams.fuze.finance
+    - name: API Gateway
+      category: Staging - UAE
+      description: Main API for the sandbox
+      link: https://staging.api.fuze.finance/checks
     - name: DAMS
       category: Sandbox - UAE
       description: Digital Assets Management Dashboard in Sandbox
